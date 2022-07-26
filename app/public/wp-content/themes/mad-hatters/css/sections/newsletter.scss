@@ -1,0 +1,139 @@
+.newsletter {
+  background-color: $color-beige-175;
+  .container {
+    padding: 2.25rem 2.25rem;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .container .header .heading {
+    font: 700 3rem/3.5rem $font-primary;
+    color: $color-black-500;
+  }
+
+  .container .header .heading-sm {
+    padding-top: 2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    color: $color-beige-600;
+  }
+
+  .container input {
+    border: none;
+    background: transparent;
+    font: 100 1.3125rem/1.96875rem $font-secondary;
+    border-bottom: 1px solid rgba(150, 118, 117, 0.5);
+    margin: 2rem 0;
+    padding-top: 0.5rem;
+    width: 100%;
+    outline: none;
+    color: $color-beige-300;
+    text-align: center;
+  }
+
+  .container input::placeholder {
+    font: 100 1.3125rem/1.96875rem $font-secondary;
+    color: $color-beige-250;
+    text-align: center;
+  }
+
+  .container .newsletter-btn {
+    position: relative;
+    padding: 2rem 4rem;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cfadac;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .container .newsletter-btn > span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.688rem;
+    color: #967675;
+  }
+
+  .container .newsletter-btn .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    box-shadow: 0px 8.6931px 36.9457px rgba(150, 79, 76, 0.32);
+    transform: translateX(-50%);
+    width: calc(100% - 2 * (1.25rem));
+    height: 50%;
+    background: transparent;
+    z-index: -1;
+  }
+}
+
+@media screen and ($rwd-xl) {
+  .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+      width: 73.1875rem;
+      margin: 0;
+      padding: 0 0 4rem 0;
+    }
+
+    .container .header .heading-sm {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $color-beige-600;
+    }
+
+    .container .header .heading {
+      font: 700 6.375rem/6.875rem $font-primary;
+    }
+
+    .container input::placeholder {
+      text-align-last: left;
+    }
+
+    .container .newsletter-btn {
+      position: relative;
+      padding: 1.25rem 2rem;
+      width: 11.5625rem;
+      height: 3.8125rem;
+      background: #ffffff;
+      border: 1px solid #cfadac;
+      border-radius: 1rem;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .container .newsletter-btn > span {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #967675;
+    }
+
+    .container input {
+      width: 46.125rem;
+      text-align-last: left;
+    }
+
+    .container .content {
+      margin-top: 5.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.1875rem;
+    }
+  }
+}

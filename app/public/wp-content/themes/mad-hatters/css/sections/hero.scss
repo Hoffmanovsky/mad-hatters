@@ -1,0 +1,228 @@
+.hero {
+  overflow: hidden;
+  .container {
+    position: relative;
+    margin: 1.75rem 0;
+  }
+
+  .container-bg {
+    position: absolute;
+    top: 3.375rem;
+    right: 7.375rem;
+  }
+
+  .container-bg .outer {
+    width: 21.875rem;
+    height: 23.1875rem;
+    border: 1px solid;
+    border-color: $color-gray-200;
+    border-radius: 50%;
+  }
+
+  .container-bg .outer::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10.375rem;
+    height: 10.375rem;
+    background: #faf2ef;
+    border-radius: 50%;
+  }
+
+  .container-front {
+    position: relative;
+    z-index: 2;
+    padding: 0 1.25rem 2rem;
+  }
+
+  .images-wrapper {
+    position: relative;
+    margin-left: 3rem;
+  }
+
+  .images-wrapper > img {
+    position: relative;
+    height: 16.5625rem;
+    width: 10.8125rem;
+    z-index: 2;
+  }
+
+  .img-behind {
+    position: absolute;
+    top: 6.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .img-behind > img {
+    height: 13.398125rem;
+    width: 9.375rem;
+  }
+
+  .content {
+    margin: 4.125rem 0 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .heading-sm {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    color: #a0a0a0;
+  }
+
+  .heading {
+    font: 700 3rem/3.5rem $font-primary;
+    color: $color-black-500;
+    margin: 0 -0.25rem 1rem;
+  }
+
+  .hero-btn {
+    position: relative;
+    padding: 2rem 4rem;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cfadac;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .hero-btn > span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.688rem;
+    color: #967675;
+  }
+
+  .hero-btn .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    box-shadow: 0px 8.6931px 36.9457px rgba(150, 79, 76, 0.32);
+    transform: translateX(-50%);
+    width: calc(100% - 2 * (1.25rem));
+    height: 50%;
+    background: transparent;
+    z-index: -1;
+  }
+}
+
+@media screen and ($rwd-xs) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    .inner-line > span {
+      font-size: 1.3125rem;
+      vertical-align: middle;
+    }
+
+    .inner-line {
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and ($rwd-lg) {
+  .hero {
+    .content {
+      margin-right: 20px;
+      padding-right: 3.0625rem;
+    }
+  }
+}
+
+@media screen and ($rwd-xl) {
+  .hero {
+    overflow: visible;
+    .container {
+      margin: 0 20rem 0 12.5rem;
+      padding-bottom: 2rem;
+    }
+    .container-front {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 3.0625rem;
+    }
+
+    .heading-sm {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #a0a0a0;
+    }
+    .heading {
+      font: 700 6.375rem/6.875rem $font-primary;
+      margin: 0 -0.25rem 1rem;
+    }
+    .inner-line > span {
+      font-size: 4rem;
+      vertical-align: middle;
+      letter-spacing: -0.6rem;
+    }
+    .hero-btn {
+      position: relative;
+      padding: 1.25rem 2rem;
+      width: 11.5625rem;
+      height: 3.8125rem;
+      background: #ffffff;
+      border: 1px solid #cfadac;
+      border-radius: 1rem;
+      text-align: center;
+      cursor: pointer;
+    }
+    .hero-btn > span {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #967675;
+    }
+
+    .images-wrapper > img {
+      position: absolute;
+      top: 0;
+      right: 6.6875rem;
+      position: relative;
+      height: 23.125rem;
+      width: 16rem;
+      z-index: 2;
+    }
+
+    .img-behind {
+      position: absolute;
+      top: 8.6875rem;
+      left: inherit;
+      transform: none;
+    }
+
+    .img-behind > img {
+      height: 18.6875rem;
+      width: 13.8125rem;
+    }
+
+    .container-bg {
+      position: absolute;
+      top: 9rem;
+      right: 13rem;
+    }
+
+    .container-bg .outer {
+      width: 21.875rem;
+      height: 23.1875rem;
+      border: 1px solid;
+      border-color: $color-gray-200;
+      border-radius: 50%;
+    }
+  }
+}

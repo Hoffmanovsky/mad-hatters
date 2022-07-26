@@ -1,0 +1,153 @@
+.header {
+  .container {
+    position: relative;
+    padding-top: 4rem;
+  }
+
+  .fixed-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: $color-white-100;
+    z-index: 10;
+    border-bottom: 1px solid $color-gray-500;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font: 700 1rem/1 $font-primary;
+    letter-spacing: 0.08em;
+  }
+  .heading {
+    font: 700 1rem/1 $font-primary;
+    margin: 0;
+  }
+
+  .logo svg {
+    display: block;
+  }
+
+  .decoration {
+    margin: 0 0.5rem 0 0;
+    max-height: 9px;
+  }
+
+  .hamburger {
+    border: none;
+  }
+
+  .hamburger .burger-menu {
+    background-color: $color-black-300;
+    position: relative;
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    border-radius: 10px;
+    z-index: 4;
+  }
+
+  .hamburger .burger-menu::after,
+  .hamburger .burger-menu::before {
+    position: absolute;
+    content: '';
+    width: 1.25rem;
+    height: 0.125rem;
+    background-color: $color-black-300;
+  }
+
+  .hamburger .burger-menu::after {
+    top: -0.375rem;
+    left: 0;
+  }
+
+  .hamburger .burger-menu::before {
+    bottom: -0.375rem;
+    left: 0;
+  }
+}
+
+@media screen and ($rwd-mobile-max) {
+  .nav ul {
+    font-family: $font-secondary;
+    list-style: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 3.125rem;
+    background: #fff;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.4s;
+    li {
+      margin-top: 1.25rem;
+      margin-left: 3.125rem;
+      margin-bottom: 0.625rem;
+      a {
+        text-decoration: none;
+        color: $color-black-300;
+      }
+    }
+  }
+}
+
+@media screen and ($rwd-lg) {
+  .header {
+    .hamburger {
+      display: none;
+    }
+    .nav ul {
+      display: flex;
+    }
+  }
+}
+
+//DESKTOP
+
+@media screen and ($rwd-xl) {
+  .header {
+    .container {
+      padding: 8.8125rem;
+      max-width: 73rem;
+      margin: 0 auto;
+    }
+    .fixed-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+      justify-content: center;
+    }
+    .logo {
+      flex-direction: column;
+      font-size: 2rem;
+    }
+    .heading {
+      font-size: 2rem;
+    }
+    .decoration {
+      margin: 1.75rem 0;
+    }
+    .nav {
+      font-family: $font-secondary;
+    }
+    .nav ul {
+      align-items: center;
+      list-style: none;
+      opacity: 1;
+    }
+
+    .nav .link {
+      display: block;
+      padding: 0 1rem;
+      margin: 1.75rem 1.5rem;
+      color: $color-black-300;
+      text-decoration: none;
+    }
+  }
+}

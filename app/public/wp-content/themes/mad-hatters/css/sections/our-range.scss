@@ -1,0 +1,181 @@
+.our-range {
+  .container {
+    padding: 0 2.25rem;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    overflow: hidden;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .heading {
+    font: 700 3rem/3.5rem $font-primary;
+    color: $color-black-500;
+    margin: 0 -0.25rem 1rem;
+  }
+
+  .heading-sm {
+    margin-top: 2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    color: $color-beige-600;
+  }
+
+  .card-list {
+    list-style: none;
+    display: grid;
+  }
+
+  .card {
+    height: 23.75rem;
+    width: 18.75rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  .card .image-section {
+    background-image: url('https://s3-alpha-sig.figma.com/img/14aa/634d/e466fbd30c910fc39963c86a5eafda74?Expires=1659312000&Signature=H-g0vjDcjTyoHcl2oGt87LpNUNrZVGwjVyzVAowYDoIqWMFZ0g1as0lXbBrCqW7NgjzpDN8sjuoYN2PmV9M9Mrfo-Sauhu5sHFSkhdvF9pkk-pI9y9wszT~6xwbMTnq-0EikNpSDuFf9VhTIffP5Kp5iMj3yBxYRtSsnen3-lY~46Y3~6I6~ahyBuQ7sm8nzKY2-78ypsafWzQsYvlPTYTvp61gwFxmAoJG0R0jZKaPsV9h-8LNzfFddwM2QMG6PGIh7Eb8wL~pK3y4Var8A9--OAxyTSF~RR89D13V7Fz7ZYwbKDV77wM9LIEc4ebCrt02bqVUNsd35ES27T3AH9w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+    background-position: center;
+    background-size: cover;
+    height: 16.4375rem;
+    width: 100%;
+  }
+
+  .content {
+    padding: 0.5rem 0;
+    height: 100%;
+    background-color: $color-beige-150;
+    text-align: center;
+  }
+
+  .card-title {
+    padding-bottom: 0.5rem;
+    color: $color-beige-600;
+    font: italic 400 1.761875rem/2.34875rem $font-primary;
+  }
+
+  .card-text {
+    font: 400 0.590625rem/0.979375rem $font-secondary;
+    color: $color-beige-600;
+  }
+
+  .show-more {
+    position: relative;
+    margin-top: 4rem;
+  }
+
+  .show-more .link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .show-more .show-more-text {
+    position: relative;
+    font: 900 1.8075rem/2.40875rem $font-primary;
+    text-align: center;
+    color: $color-black-300;
+  }
+  .show-more .show-more-text::before,
+  .show-more .show-more-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $color-black-300;
+    border-radius: 10px;
+    height: 0.0625rem;
+    width: 3.0625rem;
+  }
+
+  .show-more .show-more-text::before {
+    left: 0;
+  }
+
+  .show-more .show-more-text::after {
+    right: 0;
+  }
+
+  .show-more .show-more-shadow-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font: 700 9.945625rem/11.924375rem $font-primary;
+    color: #23242c26;
+  }
+}
+
+@media screen and ($rwd-xl) {
+  .our-range {
+    display: flex;
+    justify-content: center;
+    margin-top: 12.0625rem;
+    .container {
+      width: 73.1875rem;
+      margin: 0;
+      padding: 0 0 4rem 0;
+    }
+    .heading {
+      font: 700 6.375rem/6.875rem $font-primary;
+      margin-bottom: 6rem;
+    }
+
+    .heading-sm {
+      margin-top: 2rem;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $color-beige-600;
+    }
+    .card-list {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    .card {
+      height: 40.4375rem;
+      width: 31.9375rem;
+      margin: 0;
+    }
+
+    .card-list-item:nth-child(even) {
+      padding-top: 5.25rem;
+    }
+
+    .card .image-section {
+      height: 27.875rem;
+    }
+
+    .card-title {
+      padding-bottom: 0.5rem;
+      color: $color-beige-600;
+      font: italic 400 3rem/4rem $font-primary;
+    }
+
+    .card-text {
+      font: 400 1rem/1.65875rem $font-secondary;
+      color: $color-beige-600;
+    }
+
+    .show-more .show-more-text {
+      font: 900 2.303125rem/3.07rem $font-primary;
+    }
+
+    .show-more .show-more-text::before,
+    .show-more .show-more-text::after {
+      width: 27.25rem;
+    }
+    .show-more .show-more-shadow-text {
+      font: 700 11.39875rem/15.194375rem $font-primary;
+      color: #23242c26;
+    }
+  }
+}

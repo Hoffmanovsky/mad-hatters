@@ -1,0 +1,119 @@
+.advertise {
+  .container {
+    padding: 0 2.25rem;
+  }
+  .container .content-section .heading {
+    font: 700 3rem/3.5rem $font-primary;
+    color: $color-black-500;
+    margin: 0 -0.25rem 1rem;
+  }
+
+  .container .content-section .heading-sm {
+    margin-top: 2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    color: $color-beige-600;
+  }
+
+  .container .image-section {
+    background-color: black;
+    height: 14.551875rem;
+    width: 18.653125rem;
+    background-image: url('https://s3-alpha-sig.figma.com/img/65df/4047/f6559771fbd0a9236e86eae4c28ef5cf?Expires=1659312000&Signature=eKE767MEyTPXpZvhIMymVDnKBLJeMnHwM-3UbdBESmDKltwXM1SwajQ7pjviXeuFthEmXmyWkpaR7fjW9vzf1ymiHg82Uwyjw6ZPycLXAACyfQo94rIOTRzdpfa8PuD8ScW6w4NnYaUw6wtu4unQQYWMxSREkh9tmVolAPQvALjy6PZRJztdRVIGoWbT9GITVPVp7mWwO4qFahlsP4W5rlRO9MDx-FjWvjK2R4ff08NyuHNO25521344Ewokl1UPi9aK-tgHMe-TgPKYq0tccZnNmzgC1RpPJTFogno7VUA951OrYQvHCseOhCH8dTwN4lei2X92WsAGWP597PE3UQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container .content-section .hero-btn {
+    position: relative;
+    padding: 2rem 4rem;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cfadac;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .container .content-section .hero-btn > span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.688rem;
+    color: #967675;
+  }
+
+  .container .content-section .hero-btn .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    box-shadow: 0px 8.6931px 36.9457px rgba(150, 79, 76, 0.32);
+    transform: translateX(-50%);
+    width: calc(100% - 2 * (1.25rem));
+    height: 50%;
+    background: transparent;
+    z-index: -1;
+  }
+}
+
+@media screen and ($rwd-xl) {
+  .advertise {
+    display: flex;
+    justify-content: center;
+    margin-top: 12.0625rem;
+
+    .container {
+      width: 73.1875rem;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 5.0625rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .container .image-section {
+      background-color: black;
+      height: 28.625rem;
+      min-width: 36.9375rem;
+      background-image: url('https://s3-alpha-sig.figma.com/img/65df/4047/f6559771fbd0a9236e86eae4c28ef5cf?Expires=1659312000&Signature=eKE767MEyTPXpZvhIMymVDnKBLJeMnHwM-3UbdBESmDKltwXM1SwajQ7pjviXeuFthEmXmyWkpaR7fjW9vzf1ymiHg82Uwyjw6ZPycLXAACyfQo94rIOTRzdpfa8PuD8ScW6w4NnYaUw6wtu4unQQYWMxSREkh9tmVolAPQvALjy6PZRJztdRVIGoWbT9GITVPVp7mWwO4qFahlsP4W5rlRO9MDx-FjWvjK2R4ff08NyuHNO25521344Ewokl1UPi9aK-tgHMe-TgPKYq0tccZnNmzgC1RpPJTFogno7VUA951OrYQvHCseOhCH8dTwN4lei2X92WsAGWP597PE3UQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+      background-position: center;
+      background-size: cover;
+    }
+    .container .content-section .heading-sm {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $color-beige-600;
+    }
+    .container .content-section .heading {
+      font: 700 6.375rem/6.875rem $font-primary;
+      white-space: wrap;
+    }
+
+    .container .content-section .hero-btn {
+      position: relative;
+      padding: 1.25rem 2rem;
+      width: 11.5625rem;
+      height: 3.8125rem;
+      background: #ffffff;
+      border: 1px solid #cfadac;
+      border-radius: 1rem;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .container .content-section .hero-btn > span {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #967675;
+    }
+  }
+}
